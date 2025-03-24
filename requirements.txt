@@ -1,4 +1,5 @@
 pandas  
+geopandas
 numpy  
 scipy  
 geopy  
@@ -6,3 +7,4 @@ haversine
 openai  
 qdrant-client  
 uuid  
+matplotlib

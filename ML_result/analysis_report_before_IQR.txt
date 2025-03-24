@@ -1,0 +1,77 @@
+Top Two Models based on 5-fold CV:
+XGBoost Classifier: Mean CV Accuracy = 0.9635
+Random Forest: Mean CV Accuracy = 0.9607
+
+==================================================
+Detailed Analysis for: XGBoost Classifier
+Training time for XGBoost Classifier: 0.44 seconds
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        bike      0.983     0.937     0.959        63
+         bus      0.959     0.946     0.952        74
+         car      1.000     0.864     0.927        22
+      subway      0.696     0.889     0.780        18
+        walk      0.971     0.985     0.978       136
+
+    accuracy                          0.952       313
+   macro avg      0.922     0.924     0.919       313
+weighted avg      0.957     0.952     0.953       313
+
+Confusion Matrix:
+59	0	0	4	0
+1	70	0	1	2
+0	3	19	0	0
+0	0	0	16	2
+0	0	0	2	134
+Confusion matrix plot saved as ML_result/confusion_matrix_XGBoost_Classifier.png
+Feature Importances:
+max_speed: 0.5112
+avg_speed: 0.1704
+turn_angle_std: 0.0975
+total_distance: 0.0896
+duration_sec: 0.0361
+avg_acceleration: 0.0274
+max_acceleration: 0.0267
+turn_rate: 0.0221
+num_turns: 0.0191
+min_speed: 0.0000
+Feature importances plot saved as ML_result/feature_importances_XGBoost_Classifier.png
+
+==================================================
+Detailed Analysis for: Random Forest
+Training time for Random Forest: 0.08 seconds
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        bike      0.984     1.000     0.992        63
+         bus      0.959     0.959     0.959        74
+         car      1.000     0.864     0.927        22
+      subway      0.889     0.889     0.889        18
+        walk      0.971     0.985     0.978       136
+
+    accuracy                          0.968       313
+   macro avg      0.961     0.939     0.949       313
+weighted avg      0.968     0.968     0.968       313
+
+Confusion Matrix:
+63	0	0	0	0
+1	71	0	0	2
+0	3	19	0	0
+0	0	0	16	2
+0	0	0	2	134
+Confusion matrix plot saved as ML_result/confusion_matrix_Random_Forest.png
+Feature Importances:
+max_speed: 0.3966
+avg_speed: 0.1994
+total_distance: 0.0879
+turn_angle_std: 0.0706
+max_acceleration: 0.0679
+num_turns: 0.0582
+duration_sec: 0.0443
+turn_rate: 0.0421
+avg_acceleration: 0.0330
+min_speed: 0.0000
+Feature importances plot saved as ML_result/feature_importances_Random_Forest.png

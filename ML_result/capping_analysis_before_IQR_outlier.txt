@@ -1,0 +1,13 @@
+Global Cleaning Analysis
+=======================
+Total initial rows: 398628
+Extreme outliers removed (>2x cap): 18766
+Percentage of extreme outliers removed: 4.71%
+Very extreme outliers subset (>5x cap): 2520
+Percentage of very extreme outliers: 0.63%
+
+Remaining Data Analysis
+=======================
+Total rows after removal: 379862
+Rows with speed capped (speed > cap but ≤ 2x cap): 39187
+Percentage of rows capped: 9.83%
